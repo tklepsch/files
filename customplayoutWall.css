@@ -31,16 +31,18 @@ body {
 }
 
 .wall__header{
-    background-color: #fff;
+    background-color: white;
     text-align: center;
     color: #505050;
     font-family: 'Open Sans';
     text-transform: uppercase;
     text-align: center;
-    padding: 8px 0px 8px 0px;
-    margin: 20px 30px 8px 30px;
-    font-size: 1.2em;
+    font-size: 0;
     width: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
 }
 .wall__header:after{
     content: ' ';
@@ -48,8 +50,10 @@ body {
     background-image: url("http://www.canadasoccer.com/files/_canadaRED_no_2g.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 20px 30px 0;
 }
 
 .wall__list {
