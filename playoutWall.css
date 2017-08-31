@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    /*display: flex;*/
+    font-family: 'Open Sans';
+    /*font-size: 13px;*/
+    overflow: hidden;
+}
+
+/** End of TICKER related CSS **/
+/** Start of WALL related CSS **/
+
+
+/* --------- Style of Hero Message ---------- */
+
+
+.wall {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 30%;
+    overflow: hidden;
+}
+
+.wall__header{
+    background-color: #fff;
+    text-align: center;
+    color: #505050;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    margin: 20px 30px 8px 30px;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.wall__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* message CSS */
+
+.hero {
+    opacity: 1;
+    min-width: 40%;
+    max-width: 60%;
+    transform: translateX(0px);
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    font-size: 1.7em;
+}
+
+.hero__profileImage {
+    border: 5px solid #3B5999;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
+    background: lightgrey;
+}
+
+.hero__profileImage--facebook{
+    border: 5px solid #3B5999;
+}
+
+.hero__profileImage--periscope{
+    border: 5px solid #40A4C4;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__socialDetails {
+    background: #3B5999;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    padding-right: 30px;
+    /* order: 2; */
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.hero__socialDetails--facebook{
+    background: #3B5999;
+}
+
+.hero__socialDetails--periscope{
+    background: #40A4C4;
+}
+
+.hero__socialDetails::before {
+    font-size: 1.7em;
+    width: 67px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    background: #3B5999;
+}
+
+.hero__socialDetails::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1em;
+    width: 2em;
+    background: #3b5998;
+    transform: skewX(-160deg);
+}
+
+.hero__socialDetails--facebook::before{
+    background: #3B5999;
+}
+
+.hero__socialDetails--periscope::before{
+    background: #40A4C4;
+}
+
+.hero__socialDetails--facebook::after{
+    background: #3B5999;
+}
+
+.hero__socialDetails--periscope::after{
+    background: #40A4C4;
+}
+
+.hero__socialPlatformLogo{
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+.hero__socialPlatformLogo--periscope{
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.hero__profileName{
+    padding-left: 10px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 0px;
+    padding: 7px 0px 7px 10px;
+}
+
+.hero__createdTimestamp{
+    font-family: 'Open Sans';
+    color: #fff;
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+
+.hero__copy::before {
+    width: 50px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    background: #fff;
+}
+
+.hero__copy{
+    overflow: auto;
+    /*font-size: 1.7em;*/
+    padding-left: 10px;
+    background: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 11px;
+}
+
+
+/* message CSS */
+
+
+.message__socialPlatformLogo{
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 2px;
+}
+
+.message__socialPlatformLogo--periscope{
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.message__creationTimestamp {
+
+}
+
+.message__username{
+    /*flex: 1;*/
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+.message__socialDetails{
+    display: flex;
+    height: 20px;
+    background-color: rgba(59, 89, 152, 1);
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.message__socialDetails .message__socialPlatformLogo{
+    padding-left: 10px;
+}
+
+.message__socialDetails img.message__attachment{
+    max-width: 100%;
+}
+
+.message__socialDetails--facebook{
+    background-color: rgba(59, 89, 152, 1);
+}
+
+.message__socialDetails--periscope{
+    background-color: rgba(64, 164, 196, 1);
+}
+
+.message__socialDetails::after {
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    bottom: 79px;
+    right: 4.5em;
+    width: 13px;
+    background: #fff;
+    transform: rotate(45deg);
+    height: 13px;
+}
+
+.message__createdTimestamp{
+    float: right;
+    padding-right: 10px;
+}
+
+.message__copy{
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    height: 125px;
+    overflow: hidden;
+}
+
+.wall__listItem{
+    /* font-size: 1.7em; */
+    padding: 20px 30px;
+    /* margin: 20px 30px 20px 30px; */
+    position: relative;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+
+.message{
+    display: inline-block !important;
+    color: #fff;
+    font-family: 'Open Sans';
+    height: 250px;
+    max-width: 100%;
+    vertical-align: top;
+    flex-grow: 1;
+}
