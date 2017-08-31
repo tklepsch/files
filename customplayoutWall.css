@@ -21,17 +21,16 @@ body {
 .wall {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 30%;
     overflow: hidden;
 }
 
 .wall__header{
-    background-color: white;
     text-align: center;
     color: #505050;
     font-family: 'Open Sans';
