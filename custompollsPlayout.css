@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	position: relative;
+	font-size: 13px;
+	overflow: hidden;	/* hide the scrollbards X&Y */
+	font-family: 'Open Sans';
+}
+
+.content {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.poll {
+	height: 40%;
+  width: 40%;
+	overflow: hidden;
+	position: absolute;
+	right: 0em;
+	background-color: rgba(0, 0, 0, 0.8);
+	/* bottom: 1em; */
+	/*padding-left: 1em;*/
+	display: flex;
+	flex-direction: column;
+}
+
+/* Question label */
+.label__question{
+	font-size: 1.7em;
+	color: #3b5998;
+	background: #fff;
+	/* padding: 30px; */
+	/*position: absolute;*/
+	/*width: 90%;*/
+	text-align: center;
+	padding: 10px;
+    margin: 40px 20px 0px 20px;
+}
+
+/**/
+
+.poll__pannel--results {
+    /*margin-left: 20px;*/
+	display: flex;
+    /* flex: 0.7; */
+    flex-direction: column;
+    bottom: 0px;
+    position: absolute;
+    width: 93%;
+    height: 75%;
+    left: 5%;
+}
+
+.pollResults--option {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pollResults__box{
+	display: flex;
+	flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.pollOptions__option--label {
+	color: #3b5998;
+	font-family: 'Open Sans';
+	font-size: 1.5em;
+    text-align: left;
+    width: 90%;
+    -moz-box-sizing: border-box;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0px;
+    padding: 8px 10px 8px 10px;
+}
+
+.pollResults {
+	display: flex;
+	align-items: center;
+	position: relative;
+    height: 30px;
+}
+
+.pollResults__bar {
+	/*margin: 0 10px;*/
+	background-color: #4FE3C1;
+	/*background: linear-gradient(to top, #3B5998 0px, #f03f55 250px);*/
+	transition: width 0.5s ease-in-out;
+	width: 0%;
+    position: absolute;
+    height: 30px;
+    top: 0px;
+}
+
+.pollResults__data {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 90%;
+    height: 30px;
+    top: 0;
+}
+
+.pollResults__option--option1 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__option--option2 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__option--option3 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__option--option4 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__option--option5 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__option--option6 {
+	/*flex: 1;*/
+    width: 90%;
+	height: 30px;
+}
+
+.pollResults__tag{
+	flex: 1;
+	color: #fff;
+	font-family: 'Open Sans';
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.pollResults__votes{
+	color: #fff;
+	font-family: 'Open Sans';
+	padding-left: 10px;
+	font-size: 1.2em;
+    font-weight: lighter;
+    text-align: right;
+    z-index: 1;
+}
+
+.pollResults__percentage{
+	color: #fff;
+	font-family: 'Open Sans';
+	padding-left: 10px;
+	font-size: 1.3em;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.pollResults__image{
+    width: 43px;
+    height: 43px;
+	background-size: contain;
+    border: none;
+}
+
+.pollLabels__reaction--hide {
+	display: none;
+}
+
+.pollLabels__reaction{
+	position: absolute;
+    right: 15px;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    top: -11px;
+}
+
+.pollLabels__reaction--option1 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -23px -28px;
+	background-size: 400px;
+	border-radius: 50%;
+}
+
+.pollLabels__reaction--option6 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -325px -28px;
+	background-size: 400px;
+	border-radius: 50%;
+}
+
+.pollLabels__reaction--option3 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -144px -28px;
+	background-size: 400px;
+	border-radius: 50%;
+}
+
+.pollLabels__reaction--option5 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -265px -28px;
+	background-size: 400px;
+	border-radius: 50%;
+}
+
+.pollLabels__reaction--option2 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -83px -27px;
+	background-size: 400px;
+	border-radius: 50%;
+}
+
+.pollLabels__reaction--option4 {
+	background: url(https://media3.giphy.com/media/Da6NwNnoDZeVO/giphy.gif) no-repeat;
+	background-position: -205px -28px;
+	background-size: 400px;
+	border-radius: 50%;
+}
